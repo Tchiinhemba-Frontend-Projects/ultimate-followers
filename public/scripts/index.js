@@ -32,7 +32,9 @@ class App {
     layout(photoUrl, name) {
         return `
         <div class="grid_item">
+            <div class="image_container">
             <img src="${photoUrl}" alt="${name}">
+            </div>
             <span>${name.toLowerCase()}</span>
         </div>
         `

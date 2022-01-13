@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,7 @@ html, body {
 }
 
 body {
-  background: url("https://source.unsplash.com/random") no-repeat;
+  background: #004643;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -43,7 +44,8 @@ header div {
   display: flex;
   justify-content: center;
   position: fixed;
-  background: red;
+  background: #004643;
+  box-shadow: 0 20px 20px 5px #001e1d;
 }
 header h1 {
   color: white;
@@ -73,16 +75,28 @@ header h1 {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  background: pink;
+}
+.grid_item .image_container {
+  border-radius: 50%;
+  border-top: 5px solid red;
+  border-right: 5px solid yellow;
+  border-left: black solid 5px;
+  border-bottom: 5px solid green;
+  position: relative;
+  width: 150px;
+  height: 150px;
 }
 .grid_item img {
-  width: 150px;
+  width: 100%;
+  height: 100%;
   clip-path: circle();
   object-fit: cover;
+  position: absolute;
 }
 .grid_item span {
-  color: white;
-  font-size: 2rem;
+  color: #fffffe;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */
