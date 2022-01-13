@@ -23,20 +23,26 @@ body {
 .container {
   width: 90%;
   height: 95%;
-  background: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   border-radius: 2rem;
-  overflow: hidden;
+  overflow: scroll;
   position: relative;
 }
 
 header {
   width: 100%;
-  position: absolute;
-  top: 0;
   display: flex;
   justify-content: center;
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+}
+header div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
   background: red;
 }
 header h1 {
@@ -47,11 +53,36 @@ header h1 {
 
 .content {
   flex: 1;
-  background: blue;
+  display: flex;
+  padding-top: 8rem;
+  justify-content: center;
 }
 
 .grid-container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.grid_item {
+  width: 200px;
+  height: 220px;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: pink;
+}
+.grid_item img {
+  width: 150px;
+  clip-path: circle();
+  object-fit: cover;
+}
+.grid_item span {
+  color: white;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
