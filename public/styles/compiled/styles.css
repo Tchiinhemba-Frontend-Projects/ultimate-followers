@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: url("https://source.unsplash.com/random") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  height: 95%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background: red;
+}
+header h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-family: "Lobster", sans-serif;
+}
+
+.content {
+  flex: 1;
+  background: blue;
+}
+
+.grid-container {
+  display: grid;
+}
+
+/*# sourceMappingURL=styles.css.map */
