@@ -44,6 +44,6 @@ class App {
 }
 
 
-const endPoint = 'https://api.github.com/users/eladioclaudio/followers?per_page=139';
+const endPoint = 'https://api.github.com/users/tchiinhemba/followers?per_page=139';
 
 const appInstance = new App(endPoint)
