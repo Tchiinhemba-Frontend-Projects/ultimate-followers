@@ -1,6 +1,5 @@
 import _ from 'lodash';
 
-
 class App {
 
     constructor(api) {
@@ -13,6 +12,7 @@ class App {
         axios(api)
             .then(res => {
                 this.handler(res.data);
+                console.log(res.data)
             })
             .catch(error => {
                 console.log('==>', error);
@@ -37,7 +37,7 @@ class App {
             <div class="image_container">
             <img src="${photoUrl}" alt="${name}">
             </div>
-            <span>${name.toLowerCase()}</span>
+            <a href="https://github.com/${name.toLowerCase()}" target="_blank"><span>${name.toLowerCase()}</span></a>
         </div>
         `
     }
@@ -47,3 +47,4 @@ class App {
 const endPoint = 'https://api.github.com/users/tchiinhemba/followers?per_page=139';
 
 const appInstance = new App(endPoint)
+

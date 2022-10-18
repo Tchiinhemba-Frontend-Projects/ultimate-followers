@@ -3,20 +3,22 @@
   "version": "1.0.0",
   "description": "This is the Ultimate Followers WebSite....",
   "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eladioclaudio/ultimate-followers.git"
+    "url": "git+https://github.com/tchiinhemba/ultimate-followers.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eladioclaudio/ultimate-followers/issues"
+    "url": "https://github.com/tchiinhemba/ultimate-followers/issues"
   },
-  "homepage": "https://github.com/eladioclaudio/ultimate-followers#readme",
+  "homepage": "https://github.com/tchiinhemba/ultimate-followers#readme",
   "devDependencies": {
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1"
