@@ -19,7 +19,6 @@ body {
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 section {
@@ -30,21 +29,20 @@ section {
 
 header {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  z-index: 2;
-  overflow: hidden;
   box-shadow: 0 20px 20px 5px #001e1d;
 }
 header h1 {
   color: white;
   font-size: 3.5rem;
-  font-family: "Lobster", sans-serif;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
 .container {
   width: 90%;
   height: 95%;
+  margin: auto;
   display: flex;
   border-radius: 2rem;
   overflow: scroll;
